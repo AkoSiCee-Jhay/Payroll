@@ -70,6 +70,7 @@ daysInput.addEventListener("blur", () => {
       rate, days, gross, sss, pagibig, philhealth, tax, totalDeduction, net
     }));
 
-    window.location.href = "result.html";
+    window.location.href = "Result.html";
   }
+
 
