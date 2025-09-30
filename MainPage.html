@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payroll Main Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="box">
+    <h2>Payroll Form</h2>
+
+    <label>Employee ID:</label><br>
+    <input type="text" id="empId"><br><br>
+
+    <label>First Name:</label><br>
+    <input type="text" id="firstName" oninput="validateName(this, 'firstNameError', true)"><br>
+    <p id="firstNameError" style="color:red; font-size:12px; margin:0;"></p><br>
+
+    <label>Middle Name (Optional):</label><br>
+    <input type="text" id="middleName" oninput="validateName(this, 'middleNameError', false)"><br>
+    <p id="middleNameError" style="color:red; font-size:12px; margin:0;"></p><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" id="lastName" oninput="validateName(this, 'lastNameError', true)"><br>
+    <p id="lastNameError" style="color:red; font-size:12px; margin:0;"></p><br>
+
+    <label>Position:</label><br>
+    <input type="text" id="position"><br><br>
+
+    <label>Rate per Day:</label><br>
+    <input type="text" id="rate" placeholder="₱0.00"><br><br>
+
+    <label>Days of Work:</label><br>
+    <input type="text" id="days" placeholder="0 days"><br><br>
+
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>

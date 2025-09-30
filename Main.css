@@ -1,0 +1,47 @@
+body {
+      font-family: Arial, sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;  
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box {
+      background: transparent;
+      padding: 20px;
+      border-radius: 15px;
+      width: 500px;
+      margin: auto;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 2); 
+      text-align: center;
+      border: 2px solid white; 
+    }
+
+    input {
+      padding: 6px;
+      margin: 3px 0;
+      width: 80%;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #6c9bbb;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5f6d76;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type=number] {
+      appearance: textfield;
+      -moz-appearance: textfield;
+    }
